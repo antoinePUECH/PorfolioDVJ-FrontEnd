@@ -28,6 +28,7 @@
     width: 100%;
     text-align: center;
     margin-bottom: 10px;
+    padding-top: 20px;
 }
 #DVJ{
     color: #ffffff;
@@ -37,34 +38,46 @@
 #head{
     display: flex;
     justify-content: space-between;
-    margin: 0 100px;
+    margin: 20px 100px;
 }
 #head>p{
     color: white;
 }
 #web{
-    font-size: 45px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+    font-family: rubrik new;
 }
 #about{
-    font-size: 35px;
+    font-size: 25px;
     font-family: Arial, Helvetica, sans-serif;
 }
+#textContent{
+    display: flex;
+    align-items: center;
+}
+#text{
+    text-align: center;
+    width: 35%;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 7%;
+}
+/* SLIDER AVEC SWIPER JS */
 .swiper-container {
-    width: 550px;
-    height: 300px;
+    width: 40vw;
+    height: 350px;
     margin-left: auto;
-    margin-right: 10%;
+    margin-right: 7%;
     text-align: center;
   }
   .gallery-top{
-      margin-top: 10%;
+      margin-top: 5%;
   }
   .gallery-top .swiper-slide{
       width: 300px;
   }
   .gallery-top .swiper-slide>img{
-    width: 500px;
+    width: 40vw;
 }
   .gallery-thumbs {
     height: 20%;
@@ -75,7 +88,7 @@
     opacity: 0.4;
   }
   .gallery-thumbs .swiper-slide>img {
-    width: 100px;
+    width: 150px;
   }
   .gallery-thumbs .swiper-slide-thumb-active {
     opacity: 1;
