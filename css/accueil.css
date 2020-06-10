@@ -5,7 +5,9 @@
 .allContent{
     overflow: hidden;
 }
-
+body{
+    overflow: hidden;
+}
 #fondAnime{
     position: absolute;
     width: 100vw;
@@ -23,4 +25,81 @@
     width: 100vw;
     height: 100vh;
     z-index: -8;
+}
+#title{
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+}
+#DVJ{
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+}
+#about{
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    position: absolute;
+    right: 5%;
+}
+.footer{
+    background-color: rgb(86, 93, 105);
+    width: 100vw;
+    height: 40px;
+    position: absolute;
+    bottom: 0;
+}
+/************************** 3D part ********************************/
+canvas{
+    width: 100vw !important;
+    height: 99% !important;
+    overflow: hidden !important;
+}
+/* 3d part */
+
+#btn3d{
+    position: absolute;
+    display: flex;
+    left: 27%;
+    top: 33%;
+    transition: 1.5s;
+    cursor: pointer;
+}
+#btn3d>img{
+    width: 60%;
+}
+#categorie{
+    color: white;
+    margin-bottom: 130px;
+    margin-right: 20px;
+    font-family: rubrik new;
+    font-size: 30px;
+}
+
+#content3d{
+    color: #ffffff;
+    position: absolute;
+    width: 30%;
+    top: 35%;
+    left: 6%;
+    opacity: 0;
+    transition: 2s;
+}
+#content3d>h1{
+    font-family: rubrik new;
+    font-size: 4vw;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+#content3d>p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+#animation{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    position: absolute;
+    font-size: 20px;
+    left: 20%;
 }
