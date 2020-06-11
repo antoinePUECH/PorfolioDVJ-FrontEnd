@@ -2,6 +2,10 @@
     padding: 0;
     margin: 0;
 }
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
 .allContent{
     overflow: hidden;
 }
@@ -29,7 +33,7 @@ body{
 #title{
     width: 100%;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 10px;
 }
 #DVJ{
     color: #ffffff;
@@ -42,26 +46,43 @@ body{
     color: #ffffff;
     position: absolute;
     right: 5%;
+    top: 10%;
 }
 .footer{
     background-color: rgb(86, 93, 105);
     width: 100vw;
-    height: 40px;
+    height: 30px;
     position: absolute;
     bottom: 0;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 12px;
 }
-/************************** 3D part ********************************/
+#close{
+    width: 60px;
+    position: absolute;
+    left: 6%;
+    top: 10%;
+    opacity: 0;
+    transition: all ease-in-out 1s;
+    cursor: pointer;
+}
+/************************** three.js part ********************************/
 canvas{
     width: 100vw !important;
     height: 99% !important;
     overflow: hidden !important;
+}
+
+#allAxeContent{
+    display: none;
 }
 /* 3d part */
 
 #btn3d{
     position: absolute;
     display: flex;
-    left: 27%;
+    left: 26.5%;
     top: 33%;
     transition: 1.5s;
     cursor: pointer;
@@ -69,9 +90,10 @@ canvas{
 #btn3d>img{
     width: 60%;
 }
-#categorie{
+
+#btn3d #categorie{
     color: white;
-    margin-bottom: 130px;
+    margin-bottom: 128px;
     margin-right: 20px;
     font-family: rubrik new;
     font-size: 30px;
@@ -84,7 +106,7 @@ canvas{
     top: 35%;
     left: 6%;
     opacity: 0;
-    transition: 2s;
+    transition: all ease-in-out 1.5s;
 }
 #content3d>h1{
     font-family: rubrik new;
@@ -94,12 +116,187 @@ canvas{
 }
 #content3d>p{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
+    font-size: 17px;
 }
 #animation{
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     position: absolute;
-    font-size: 20px;
+    font-size: 25px;
+    left: 40%;
+    top: 28%;
+    color: #ffffff;
+    opacity: 0;
+    transition: all ease-in-out 1.5s;
+}
+#animation>img{
+    margin-right: 15px;
+}
+#modelisation{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    position: absolute;
+    font-size: 25px;
+    left: 35%;
+    bottom: 26%;
+    color: #ffffff;
+    opacity: 0;
+    transition: all ease-in-out 1.5s;
+}
+#modelisation>img{
+    margin-right: 15px;
+}
+/**********/
+
+/* Web part */
+
+#btnWeb{
+    position: absolute;
+    display: flex;
+    right: 16%;
+    top: 48%;
+    transition: 1.5s;
+    cursor: pointer;
+}
+#btnWeb>img{
+    width: 55%;
+    margin: -63px 0 0 0;
+}
+
+#btnWeb #categorie{
+    color: white;
+    margin-left: 20px;
+    font-family: rubrik new;
+    font-size: 30px;
+}
+#contentWeb{
+    color: #ffffff;
+    position: absolute;
+    width: 27%;
+    top: 27%;
+    right: 6%;
+    opacity: 0;
+    transition: all ease-in-out 1.5s;
+}
+#contentWeb>h1{
+    font-family: rubrik new;
+    font-size: 3vw;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+#contentWeb>p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+}
+#site{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    position: absolute;
+    font-size: 25px;
+    right: 50%;
+    top: 45%;
+    color: #ffffff;
+    opacity: 0;
+    transition: all ease-in-out 1.5s;
+}
+#site>img{
+    margin-right: 15px;
+}
+#web{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    position: absolute;
+    font-size: 25px;
+    right: 40%;
+    bottom: 25%;
+    color: #ffffff;
+    opacity: 0;
+    transition: all ease-in-out 1.5s;
+}
+#web>img{
+    margin-right: 15px;
+}
+/*******/
+
+/* crea part */
+
+#btnCrea{
+    position: absolute;
+    display: flex;
+    left: 25%;
+    bottom: 16%;
+    transition: 1.5s;
+    cursor: pointer;
+}
+#btnCrea>img{
+    width: 60%;
+    margin: -80px 0 0 0;
+}
+#btnCrea #categorie{
+    color: white;
+    margin-right: 20px;
+    font-family: rubrik new;
+    font-size: 30px;
+}
+#contentCrea{
+    color: #ffffff;
+    position: absolute;
+    width: 27%;
+    top: 35%;
+    left: 6%;
+    opacity: 0;
+    transition: all ease-in-out 1.5s;
+}
+#contentCrea>h1{
+    font-family: rubrik new;
+    font-size: 3vw;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+#contentCrea>p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+}
+#maquette{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    position: absolute;
+    font-size: 25px;
+    left: 45%;
+    top: 25%;
+    color: #ffffff;
+    opacity: 0;
+    transition: all ease-in-out 1.5s;
+}
+#maquette>img{
+    margin-right: 15px;
+}
+
+#motion{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    position: absolute;
+    font-size: 25px;
     left: 20%;
+    bottom: 30%;
+    color: #ffffff;
+    opacity: 0;
+    transition: all ease-in-out 1.5s;
+}
+#motion>img{
+    margin-right: 15px;
+}
+#illustration{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    position: absolute;
+    font-size: 25px;
+    left: 47%;
+    bottom: 20%;
+    color: #ffffff;
+    opacity: 0;
+    transition: all ease-in-out 1.5s;
+}
+#illustration>img{
+    margin-right: 15px;
 }
