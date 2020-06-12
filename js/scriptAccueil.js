@@ -24,7 +24,6 @@ loader.load( '../BAPDVJ/public/LOGO.glb', function ( gltf ) {
 	scene.add( gltf.scene );
 	gltf.scene.rotation.y = 0.05;
 	renderer.render(scene, camera);
-    console.log("ta reussi fdp");
 
 }, undefined, function ( error ) {
 
@@ -79,7 +78,7 @@ var back = document.getElementById('close');
 			
 		}
 		allAxe.style.display = "initial";
-		await pause(1);
+		await pause(10);
 		back.style.opacity = "1";
 		await pause(500);
 		animation3d.style.opacity = "1";
@@ -114,7 +113,7 @@ var back = document.getElementById('close');
 			
 		}
 		allAxe.style.display = "initial";
-		await pause(1);
+		await pause(10);
 		back.style.opacity = "1";
 		await pause(500);
 		menuWeb.style.opacity = "1";
@@ -148,7 +147,7 @@ var back = document.getElementById('close');
 			
 		}
 		allAxe.style.display = "initial";
-		await pause(1);
+		await pause(10);
 		back.style.opacity = "1";
 		await pause(500);
 		menuCrea.style.opacity = "1";
